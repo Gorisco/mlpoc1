@@ -121,12 +121,12 @@ def create_opencv_image_from_stringio(img_stream, cv2_img_flag=1):
 # Interface =========================================================
 
 st.set_page_config(
-  page_title="My YOLO App",
-  page_icon="🚀"
+  page_title="AI/ML Automation",
+  #page_icon="🚀"
 )
 
-st.title('My YOLO App')
-st.markdown('This is an application for object detection using YOLO')
+st.title('AI/ML Automation')
+st.markdown('HLD for automation solutions')
 
 img_files = st.file_uploader(label="Choose an image files",
                  type=['png', 'jpg', 'jpeg'],
@@ -144,7 +144,7 @@ for n, img_file_buffer in enumerate(img_files):
                 st.image(im0, channels="BGR", caption=f'Detection Results ({n+1}/{len(img_files)})')
 
 st.markdown("""
-  <p style='text-align: center; font-size:16px; margin-top: 32px'>
-    AwesomePython @2020
+  <p style='text-align: left; font-size:16px; margin-top: 32px'>
+    Gorisco.com @2024
   </p>
 """, unsafe_allow_html=True)
