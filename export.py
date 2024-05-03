@@ -436,7 +436,7 @@ def export_tfjs(file, prefix=colorstr('TensorFlow.js:')):
 @smart_inference_mode()
 def run(
         data=ROOT / 'data/coco128.yaml',  # 'dataset.yaml path'
-        weights=ROOT / 'yolov5s.pt',  # weights path
+        weights=ROOT / 'runs/yolov7.pt',  # weights path
         imgsz=(640, 640),  # image (height, width)
         batch_size=1,  # batch size
         device='cpu',  # cuda device, i.e. 0 or 0,1,2,3 or cpu
